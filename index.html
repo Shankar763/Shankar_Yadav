@@ -4,42 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shankar Yadav - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
         }
         nav {
             text-align: center;
-            margin: 1rem 0;
+            margin: 2rem 0;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
         }
         .container {
             max-width: 1200px;
             margin: auto;
-            padding: 1rem;
+            padding: 2rem;
         }
         .section {
-            margin: 2rem 0;
-            padding: 1rem;
+            margin: 3rem 0;
+            padding: 2rem;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         .section h2 {
             margin-top: 0;
+            font-size: 2rem;
+            color: #007BFF;
         }
         .skills, .projects {
             display: flex;
@@ -52,6 +70,12 @@
             padding: 1rem;
             background: #f9f9f9;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skills div:hover, .projects div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         }
         footer {
             text-align: center;
@@ -75,7 +99,7 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hello! I am Shankar Yadav from Rajbiraj, Saptari, Nepal. I am an Electrical and Electronics Engineer with a passion for developing innovative solutions. I have experience in various programming languages and technologies, and I am always eager to learn more and take on new challenges.</p>
+            <p>Hello! I'm Shankar Yadav, a passionate Electrical & Electronics Engineer and the visionary Founder of Kibot Electronics Pvt. Ltd. I thrive on solving complex problems and turning innovative ideas into reality. With a deep enthusiasm for IoT, Networking, Automation, and Biomedical Engineering, I am on a mission to make a significant impact in the tech world. As an aspiring Embedded Systems Engineer, I continually seek out new challenges to push the boundaries of technology. Let's connect and create something amazing together!</p>
         </section>
         <section id="skills" class="section">
             <h2>Skills</h2>
@@ -159,5 +183,6 @@
     </footer>
 </body>
 </html>
+
 
 
